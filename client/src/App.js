@@ -15,7 +15,6 @@ function App() {
     <div className="App">
       Hey!
       <TextField/>
-      <TextField />
     </div>
   );
 }

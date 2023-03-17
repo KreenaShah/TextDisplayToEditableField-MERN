@@ -50,7 +50,29 @@ function TextField() {
       );
     }
     
-  return isInEditMode ? (<EditableInputField />) : (<DisplayText/>);
+  return (
+    <>
+      {isInEditMode ? (
+        <div>
+          <input
+            type="text"
+            name="fullName"
+            defaultValue={fieldValue}
+            ref={inputFieldValue}
+          ></input>
+          <button onClick={changeEditMode}>cancel</button>
+          <button onClick={updateDetails}>update</button>
+          {isInEditMode ? "isInEditMode : TRUE" : "isInEditMode : FALSE"}
+        </div>
+      ) : (
+        <div onDoubleClick={changeEditMode}>
+          {fieldValue}
+          {isInEditMode ? "isInEditMode : TRUE" : "isInEditMode : FALSE"}
+        </div>
+      )}
+      
+    </>
+  );
 }
 
 export default TextField;
