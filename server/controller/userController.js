@@ -43,6 +43,7 @@ const editUser = async (request, response) => {
       id,
       {
         fullName: request?.body?.fullName,
+        email: request?.body?.email,
       },
       { new: true }
     );

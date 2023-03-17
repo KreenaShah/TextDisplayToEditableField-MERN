@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./App.css";
-import TextField from "./components/TextField";
+import FullNameTextField from "./components/FullNameTextField";
+import EmailTextField from "./components/EmailTextField"
 
 function App() {
   // const[data , setData] = useState({
@@ -14,7 +15,8 @@ function App() {
   return (
     <div className="App">
       Hey!
-      <TextField/>
+      <FullNameTextField/>
+      <EmailTextField/>
     </div>
   );
 }
