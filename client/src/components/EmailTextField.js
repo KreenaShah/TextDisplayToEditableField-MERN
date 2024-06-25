@@ -49,30 +49,30 @@ function TextField() {
     }
   };
 
-  function EditableInputField() {
-    return (
-      <div>
-        <input
-          type="text"
-          name="email"
-          defaultValue={fieldValue}
-          ref={inputEmailFieldValue}
-        ></input>
-        <button onClick={changeEditMode}>cancel</button>
-        <button onClick={updateDetails}>update</button>
-        {isInEditMode ? "isInEditMode : TRUE" : "isInEditMode : FALSE"}
-      </div>
-    );
-  }
+  // function EditableInputField() {
+  //   return (
+  //     <div>
+  //       <input
+  //         type="text"
+  //         name="email"
+  //         defaultValue={fieldValue}
+  //         ref={inputEmailFieldValue}
+  //       ></input>
+  //       <button onClick={changeEditMode}>cancel</button>
+  //       <button onClick={updateDetails}>update</button>
+  //       {isInEditMode ? " isInEditMode : TRUE" : "isInEditMode : FALSE"}
+  //     </div>
+  //   );
+  // }
 
-  function DisplayText() {
-    return (
-      <div onDoubleClick={changeEditMode}>
-        {fieldValue}
-        {isInEditMode ? "isInEditMode : TRUE" : "isInEditMode : FALSE"}
-      </div>
-    );
-  }
+  // function DisplayText() {
+  //   return (
+  //     <div onDoubleClick={changeEditMode}>
+  //       {fieldValue}
+  //       {isInEditMode ? "isInEditMode : TRUE" : "isInEditMode : FALSE"}
+  //     </div>
+  //   );
+  // }
 
   return (
     <>

@@ -1,4 +1,3 @@
-import { useState } from "react";
 import "./App.css";
 import FullNameTextField from "./components/FullNameTextField";
 import EmailTextField from "./components/EmailTextField"

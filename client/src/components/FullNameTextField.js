@@ -36,7 +36,7 @@ function TextField() {
       console.log("handleEdit function");
       console.log(inputFieldValue);
       setIsInEditMode(!isInEditMode);
-      const editedInfo = fieldValue;
+      // const editedInfo = fieldValue;
       console.log("Data",data);
       try {
         console.log("before editUser api function.........");
@@ -50,30 +50,30 @@ function TextField() {
       }
     };
 
-    function EditableInputField() {
-      return (
-        <div>
-          <input
-            type="text"
-            name="email"
-            defaultValue={fieldValue}
-            ref={inputFieldValue}
-          ></input>
-          <button onClick={changeEditMode}>cancel</button>
-          <button onClick={updateDetails}>update</button>
-          {isInEditMode ? "isInEditMode : TRUE" : "isInEditMode : FALSE"}
-        </div>
-      );
-    }
+    // function EditableInputField() {
+    //   return (
+    //     <div>
+    //       <input
+    //         type="text"
+    //         name="email"
+    //         defaultValue={fieldValue}
+    //         ref={inputFieldValue}
+    //       ></input>
+    //       <button onClick={changeEditMode}>cancel</button>
+    //       <button onClick={updateDetails}>update</button>
+    //       {isInEditMode ? "isInEditMode : TRUE" : "isInEditMode : FALSE"}
+    //     </div>
+    //   );
+    // }
 
-    function DisplayText() {
-      return (
-        <div onDoubleClick={changeEditMode}>
-      {fieldValue}
-      {isInEditMode ? "isInEditMode : TRUE" : "isInEditMode : FALSE"}
-    </div>
-      );
-    }
+    // function DisplayText() {
+    //   return (
+    //     <div onDoubleClick={changeEditMode}>
+    //   {fieldValue}
+    //   {isInEditMode ? " isInEditMode : TRUE" : " isInEditMode : FALSE"}
+    // </div>
+    //   );
+    // }
     
   return (
     <>
